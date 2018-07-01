@@ -1,0 +1,30 @@
+{
+  "name": "@distdns/register",
+  "version": "0.1.1",
+  "description": "dWeb Library For Routing .local Domains To Your Local Environment.",
+  "contributors": [
+    "Jared Rice Sr. <jared@dwebs.io>",
+    "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "engines": [
+    "node >= 0.8.0"
+  ],
+  "bin": {
+    "dregister": "./bin.js"
+  },
+  "dependencies": {
+    "@distdns/core": "distdns/core#master",
+    "network-address": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,9 +1,9 @@
 var addr = require('network-address')
-var multicastdns = require('multicast-dns')
+var mdns = require('@distdns/core')
 
 module.exports = function (name) {
   name = name.replace('.local', '')
-  var mdns = multicastdns()
+  var mdns = mdns()
 
   mdns.on('error', function () {
     // ignore errors

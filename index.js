@@ -1,9 +1,9 @@
 var addr = require('network-address')
-var mdns = require('@distdns/core')
+var dmdns = require('@distdns/core')
 
 module.exports = function (name) {
   name = name.replace('.local', '')
-  var mdns = mdns()
+  var mdns = dmdns()
 
   mdns.on('error', function () {
     // ignore errors
